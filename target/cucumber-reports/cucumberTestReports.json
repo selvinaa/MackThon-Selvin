@@ -1,0 +1,94 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-29T22:37:31.181Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3684153890,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify title of Home Page",
+        "description": "",
+        "id": "home-page-testing;verify-title-of-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 96784,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2412641498,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens home page",
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...ng Tutorials \u0026 Video[s] for IT Courses\u003e but was:\u003c...ng Tutorials \u0026 Video[] for IT Courses\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat step_definitions.HomePage_STEPS.verifies_title_is(HomePage_STEPS.java:26)\n\tat ✽.Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"(file:src/test/resources/features/homePage.feature:6)\n",
+              "duration": 231040378,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePage_STEPS.verifies_title_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@homePage"
+          },
+          {
+            "name": "@verifytitle"
+          }
+        ]
+      }
+    ],
+    "name": "Home page Testing",
+    "description": "",
+    "id": "home-page-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
+    "tags": [
+      {
+        "name": "@homePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

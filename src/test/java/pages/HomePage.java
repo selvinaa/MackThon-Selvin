@@ -9,6 +9,7 @@ import util.SeleniumUtils;
 
 public class HomePage {
     private static WebDriver driver = Driver.getDriver();
+
     public HomePage(){
 
         PageFactory.initElements(driver, this);

@@ -18,12 +18,12 @@ public class HomePage_Web_STEPS {
 
 
     @Given("User opens Apache Pag")
-    public void user_opens_Apache_Pag() {
+    public void user_opens_Apache_Page() {
         homePage_web.apache_btn.click();
         Assert.assertEquals(driver.getTitle(), "Apache Tutorials for Beginners");
-        // Write code here that turns the phrase above into concrete actions
-        //throw new cucumber.api.PendingException();
-    }
 
+
+
+    }
 
 }

@@ -5,9 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Driver;
+//EXTENDING HOME PAGE TO GET ACCESS OF IT
+public class HomePage_Web{
 
-public class HomePage_Web {
     private static WebDriver driver = Driver.getDriver();
+
+    HomePage homePage = new HomePage();
+
     public HomePage_Web(){
 
         PageFactory.initElements(driver, this);

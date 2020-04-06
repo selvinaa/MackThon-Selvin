@@ -1,6 +1,6 @@
 @homePageWebApache
 
-Feature: Home page Apache Testing
+Feature: Home page Apache button Testing
   @verifytitle
   Scenario: Verify title of Home Page
     Given User opens home page

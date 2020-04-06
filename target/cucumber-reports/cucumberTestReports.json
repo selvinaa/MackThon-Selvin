@@ -1,13 +1,13 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-29T23:43:10.229Z",
+        "start_timestamp": "2020-04-06T14:47:53.644Z",
         "before": [
           {
             "result": {
-              "duration": 4029214038,
+              "duration": 3342447672,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
+        "line": 4,
         "name": "Verify title of Home Page",
         "description": "",
-        "id": "home-page-apache-testing;verify-title-of-home-page",
+        "id": "home-page-testing;verify-title-of-home-page",
         "after": [
           {
             "result": {
-              "duration": 3273102,
+              "duration": 82835,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2649350099,
+              "duration": 2507927760,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -47,27 +47,16 @@
           },
           {
             "result": {
-              "duration": 15831495113,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...ng Tutorials \u0026 Video[s] for IT Courses\u003e but was:\u003c...ng Tutorials \u0026 Video[] for IT Courses\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat step_definitions.HomePage_STEPS.verifies_title_is(HomePage_STEPS.java:27)\n\tat ✽.Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"(file:src/test/resources/features/homePage.feature:6)\n",
+              "duration": 143481737,
+              "status": "failed"
             },
-            "line": 7,
-            "name": "User opens Apache Pag",
-            "match": {
-              "location": "HomePage_Web_STEPS.user_opens_Apache_Pag()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 129309725,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verifies title is \"Apache Tutorials for Beginners\"",
+            "line": 6,
+            "name": "Verifies title is \"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Apache Tutorials for Beginners\"",
+                  "val": "\"Meet Guru99 - Free Training Tutorials \u0026 Videos for IT Courses\"",
                   "offset": 18
                 }
               ],
@@ -78,7 +67,7 @@
         ],
         "tags": [
           {
-            "name": "@homePageWebApache"
+            "name": "@homePage"
           },
           {
             "name": "@verifytitle"
@@ -86,14 +75,14 @@
         ]
       }
     ],
-    "name": "Home page Apache Testing",
+    "name": "Home page Testing",
     "description": "",
-    "id": "home-page-apache-testing",
+    "id": "home-page-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/HomePage_Web.feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
     "tags": [
       {
-        "name": "@homePageWebApache",
+        "name": "@homePage",
         "type": "Tag",
         "location": {
           "line": 1,

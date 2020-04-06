@@ -23,6 +23,6 @@ public class HomePage_STEPS {
 
     @Then("Verifies title is {string}")
     public void verifies_title_is(String string) {
-        Assert.assertEquals(string, driver.getTitle());
+        Assert.assertEquals(String, driver.getTitle());
     }
 }

@@ -11,6 +11,7 @@ public class HomePage_impl {
     HomePage homePage = new HomePage();
 
     public String getTitle(){
+
         return driver.getTitle();
     }
 

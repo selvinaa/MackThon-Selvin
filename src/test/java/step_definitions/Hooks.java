@@ -7,7 +7,7 @@ import util.Driver;
 public class Hooks{
 
     @Before
-    public void beforeScenario(){
+    public void beforeScenario() {
         Driver.getDriver();
     }
 

@@ -23,6 +23,9 @@ public class HomePage_Web{
     @FindBy(xpath = "(//a[@title='Apache'])[2]")
     public WebElement apache_btn;
 
+    @FindBy(xpath = "//button[@class='gsc-search-button gsc-search-button-v2'][1]")
+    public WebElement searchField;
+
 
 
 }
